@@ -9,3 +9,7 @@
 4)We can have multiple instance of question service and the FeignClient that we have used at quiz microservice will handle the load balancing between different instances.
 
 5)Here Api Gateway act as a layer between making a request to quiz service and then sending request to different question service instance. As different microservice are running at there own port and host , to avoid specifying for each instance , we use this api gateway that handles these request.
+
+Run your quizserviceapplication,questionserviceapplication and apigatewayapplication file and open this http://localhost:8761/  (eureka server registry url)
+You can see your services registered here.
+
